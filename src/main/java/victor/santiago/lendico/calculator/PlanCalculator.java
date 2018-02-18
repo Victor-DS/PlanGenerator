@@ -38,8 +38,8 @@ public class PlanCalculator {
                           .borrowerPaymentAmount(annuity)
                           .principal(principal)
                           .interest(interest)
-                          .initialOutstandingPrincipal(lastOutstandingPrincipal)
-                          .remainingOutstandingPrincipal(lastOutstandingPrincipal - principal)
+                          .initialOutstandingPrincipal(Math.max(lastOutstandingPrincipal, 0.00))
+                          .remainingOutstandingPrincipal(Math.max(lastOutstandingPrincipal - principal, 0.00))
                           .build();
     }
 
