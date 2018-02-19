@@ -38,7 +38,8 @@ If you can't deploy it, but would like to test it, you can use the following end
 
 https://s65067mvs5.execute-api.eu-central-1.amazonaws.com/prod/GeneratePlan
 
-Just make a POST request to that endpoint passing the following parameters:
+Just make a POST request to that endpoint passing the following JSON on the body:
+
 ```json
 {
   "loanAmount": 5000,
