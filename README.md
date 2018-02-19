@@ -26,7 +26,7 @@ $ brew install maven
 $ mvn package
 ```
 
-3. Create a Lambda function on AWS, and upload the .jar file.
+3. Create a Lambda function on AWS, upload the .jar file and set the **handler** as *victor.santiago.lendico.GeneratePlan*.
 
 That's all you need. This function doesn't need any special permissions, so you should be good to go.
 
