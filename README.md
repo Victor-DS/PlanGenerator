@@ -7,17 +7,21 @@ It was implemented using a serverless architecture for **AWS Lambda** and **Circ
 
 ## How to deploy
 1. Install Maven.
+
 On Linux:
+
 ```bash
 $ sudo apt-get install mvn
 ```
 
-With Homebrew:
+Or with Homebrew:
+
 ```bash
 $ brew install maven
 ```
 
 2. Go to the project directory and build the project.
+
 ```
 $ mvn package
 ```
@@ -31,6 +35,7 @@ If you want, you can use API Gateway to have an API so that everybody can invoke
 
 ## Test it live
 If you can't deploy it, but would like to test it, you can use the following endpoint:
+
 https://s65067mvs5.execute-api.eu-central-1.amazonaws.com/prod/GeneratePlan
 
 Just make a POST request to that endpoint passing the following parameters:
